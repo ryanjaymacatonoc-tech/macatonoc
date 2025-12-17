@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compstible" contestylent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+</head>
+       
+       <div class="blur-box">
+        TCGC - Light of the World <br>
+        Lux Mundi- Una ang Ginoo
+       </div>
+<body>
+
+    
+    <div class="wrapper"> 
+        <form onsubmit="return login()">
+            <h2>Login</h2>
+            <div class="input-box">
+                 <input type="text" id="username" placeholder="Username"
+                 required>
+                 <i class='bx bxs-user'></i>
+
+            </div>
+            <div class="input-box">
+                <input type="Password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                 <label><input type="checkbox"> Remember me</label>
+                 
+            </div>
+            <br>
+             <center>
+                <button type="submit" class="btn">Login</button>
+             </center>
+
+            <div class="register-link">
+                 <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function login(){
+
+            let pass= document.getElementById("password").value;
+            let user= document.getElementById("username").value;
+
+            let correctPass= "rjpassword";
+            let correctUser="admin123";
+
+            if(pass === correctPass && user === correctUser){
+                window.location.href="website.html";
+
+                return false;
+                
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.blur-box {
+    animation: blurFadein 1.2s ease-out forwards, floatbox 4s ease-in-out infinite;
+}
+
+@keyframes floatbox {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: onepiece 20s linear infinite;
+    
+}
+
+
+@keyframes onepiece{
+    0%{
+        background-image: url(ryanjay.jpg);
+    }
+
+    25%{
+        background-image: url(ryan1.jpg);
+    }
+
+    50%{
+        background-image: url(ryan3.jpg);
+    }
+
+    75%{
+
+        background-image: url(ryan2.jpg);
+
+    }
+
+    100%{
+
+        background-image: url(ryan4.jpg);
+
+
+    }
+}
+.top-left-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding:25px 28px;
+    background-color: bisque;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.3em;
+}
+.blur-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px 20px;
+
+    background: rgba(255, 255, 255, 0.25); /*transparent white */
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px); /*main blur effect */
+    -webkit-backdrop-filter: blur(10px); /*Safari support */
+
+    border: 1px solid rgba(255, 255, 255,0.4); /* soft border */
+    color: white;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(300, 300, 300, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+
+
+}
+
+.wrapper h2 {
+    background: transparent;
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    background: transparent;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remeber-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #4d0606;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color:#3f0404;
+    text-decoration: none;
+}
+
+.remeber-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100px;
+    height: 45px;
+    background: #5a0404;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #530404;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+   text-decoration: underline;
+}
+
+input{
+    transition: 1s;
+    
+}
+
+input:hover{
+    transform: scale(1.05);
+    border: 2px solid  rgb(11, 88, 88);
+
+}

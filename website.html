@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCGC | Una ang Ginoo | Light of the World</title>
+    <style>
+        body {
+           background-image: url(ryan\(4\).jpg);
+           background-size: cover;
+            background-repeat:no-repeat ;
+            background-attachment: fixed;
+            margin: 0;
+            color: rgb(205, 255, 240);
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 100%;
+            overflow-y: scroll;
+        }
+        /* NAVIGATION CONTAINER */
+nav {
+  background: #020a31;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(124, 10, 10, 0.4);
+  animation: slideDown 1s ease forwards;
+}
+
+/* NAV LINKS */
+nav a {
+  color: #04163a;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  position: relative;
+  font-size: 0.95rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* STAGGERED ANIMATION */
+nav a:nth-child(1) { animation-delay: 0.s9; }
+nav a:nth-child(2) { animation-delay: 0.9s; }
+nav a:nth-child(3) { animation-delay: 0.9s; }
+nav a:nth-child(4) { animation-delay: 0.9s; }
+nav a:nth-child(5) { animation-delay:  0.9s; }
+
+/* HOVER UNDERLINE EFFECT */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #085779;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+   img {
+      border-radius: 30px;
+   }
+        section {
+            min-height: 90vh; /* Fullscreen height */
+            background-size: cover; /*Make image fill section */
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Text visible on images */
+            padding: 30px;
+        }
+        /* Section backgrounds */
+        #s1 {
+            background: url(hatsu1.jpg) no-repeat transparent;
+            background-size: cover;
+        }
+        #s2 {
+            background: url(hatsu2.jpg) no-repeat;
+            background-size: cover;
+         }
+        #s3 {
+            background: url(hatsu3.jpg) no-repeat;
+            background-size: cover;
+        }
+        #s4 {
+           background: url(hatsu4.jpg) no-repeat;
+           background-size: cover;
+        }
+        #s5 {
+           background: url(hatsu5.jpg) no-repeat;
+           background-size: cover;
+        }
+        .page {
+            text-align: center;
+            cursor: pointer;
+            margin: 5px auto;
+            position: relative;
+            width: max-content;
+            font-size: 15px;
+        }
+        .page::after {
+            transform: scaleX(1);
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(43, 3, 3);
+        }
+         
+        nav{
+            text-align: center;
+            margin: 5px auto;
+            font-size: 25px;
+            border: 1px solid rgba(2, 38, 43, 0.452);
+            background-color: rgba(155, 116, 18, 0.609);
+            width: fit-content;
+            padding: 5px 15px 10px 15px;
+            vertical-align: middle;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 0px 0px 2px rgb(178, 184, 11);
+            position: sticky;
+            top: 5px;
+        }
+        .title {
+            border: 1px solid rgba(7, 29, 32, 0.843);
+            background-color: gray;
+            width: fit-content;
+            padding: 10px;
+            margin: 15px auto;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 2px darkgoldenrod;
+        }
+        .container {
+            display: none;
+        }
+        .container.active {
+            display: block;
+        }
+        .backrground .content {
+            margin: 10px auto;
+            color: gray;
+            width: fit-content;
+            padding: 0px 25px 0px 25px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(55, 5, 5);
+            border: 1px solid rgb(30, 30, 6);
+        }
+        .backrground {
+            padding: 0px 25px 0px 25px;
+        }
+        .holder {
+            padding: 0px 25px 0px 25px;
+        }
+        .bottom {
+            border: 1px solid rgb(1, 55, 1);
+            background-color: rgb(1, 55, 1);
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px;
+        }
+        section img {
+            width: 250px;
+            height: 270px;
+            margin-right: 10px;
+            transition: 2s ease-in-out;
+           
+        }
+
+        section img:hover{
+            transform: translateY(-15px);
+            box-shadow:0 0 25px cyan;
+            transition: 0.5s ease-in-out;
+            
+        }
+
+        section{
+            padding: 10px;
+            background-color: bisque;
+            margin-top: 20px;
+
+        }
+
+        h1{
+            color: black;
+        }
+        p {
+            color: black;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+       
+    </style>  
+</head>
+
+<body>
+    
+
+    <div class="holder">
+    <nav>
+        <b>
+
+            <a href="#1">Personal Reflection</a> |
+            <a href="#2">Community Service</a> |
+            <a href="#3">Inspirational Portfolio</a> |
+            <a href="#4">Educational or Informational</a> |
+            <a href="#5">Faith and Technology Integration</a> |
+        </b>
+    </nav>
+    <section id="s1">
+        <h1 style="border: #38bdf8;" width="10px" >Personal Reflection</h1>
+        <p>
+           Faith grounds me in integrity and responsibility, helping me navigate the digital world
+                with kindness and truth. By putting God first, I strive to be a beacon of light online,
+                sharing hope and uplifting my community through my words and actions.
+                I have learned that growth does not happen all at once but through small experiences every day.
+
+                <br>
+                 Being a student has taught me patience, responsibility, and the value of hard work. 
+                 There are times when I feel pressured or unsure, but I try to stay focused on my goals. 
+                 I realize that mistakes are part of learning and not something to be afraid of.
+
+
+                 <br>
+
+                I also learned the importance of managing my time, especially when tasks start to pile up.
+                Support from my family and friends motivates me to keep going. When I succeed, I feel proud, and when I fail,
+                I try to reflect and improve. I am still discovering my strengths and weaknesses as a person.
+                Overall, I see myself growing more mature and confident with each challenge I face.
+
+        </p>
+        <div class="slider">
+        <img src="person1.jpg" alt=""> 
+        <img src="person2.jpg" alt="">
+        <img src="person3.jpg" alt="">
+        </div>
+        
+
+    </section>
+
+    <section id="s2">
+        <h1>Community Service</h1>
+        <p>
+            We believe in giving back through initiatives such as:</p>
+            <ul>
+                <li>Charity drives for the less fortunate</li>
+                <li>Church outreach programs spreading the Gospel</li>
+                <li>Environmental campaigns promoting stewardship of God's creation</li>
+                <li>School volunteer activities fostering community spirit</li>
+            </ul>
+            <p>
+                These efforts reflect our call to serve others with love and compassion,
+                inspired by our faith values.
+        </p>
+        <div class="slider">
+        <img src="comser1.jpg" alt=""> 
+        <img src="comser2.jpg" alt="">
+        <img src="comser3.jpg" alt="">
+        <img src="comser4.jpg"alt="">
+        <img src="comser5.jpg" alt="">
+        <img src="comser6.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="s3">
+        <h1>Inspirational Portfolio</h1>
+         <p>
+           <ul>
+                <li>Work Ethic: Dedicated and passionate about my faith journey</li>
+                <li>Goals: To exemplify the teachings of "Light of the World" in daily life</li>
+                <li>Guiding Values: Honesty, Compassion, and Respect</li>
+                <li>Creative Expression: Using art and digital media to spread positivity</li>
+            </ul>
+         <div class="slider">
+            <img src="grad1.jpg" alt="">
+            <img src="grad2.jpg" alt="">
+         </div>
+    </section>
+
+    <section id="s4">
+        <h1>Educational or Informational</h1>
+         <p><strong>Online Kindness:</strong> Treat others with respect and avoid harmful comments or cyberbullying.</p>
+            <p><strong>Honesty in Digital Creation:</strong> Always credit original sources and avoid plagiarism.</p>
+            <p><strong>Digital Responsibility:</strong> Be mindful of what you share; promote truth and positivity.</p>
+            <p><strong>Faith Integration:</strong> Let your digital presence be a testament to your faith and values.</p>
+    </section>
+
+    <section id="s5">
+        <h1>Faith & Technology</h1>
+        <p>
+          Technology is a powerful tool to spread the message of hope and faith.
+                By creating inspiring content and sharing uplifting messages online,
+                we can enlighten others and build a positive digital community.
+
+                <br>
+
+                Faith guides my values and decisions, 
+                while technology helps me learn, communicate, and improve my skills. 
+                When I use technology with faith, I am reminded to use it responsibly, honestly, and for good purposes, not to harm others.
+
+
+                <br>
+                My faith helps me stay grounded so I don’t rely on technology alone.
+                It reminds me that technology is a tool, not something that should control my life, but something.
+                I can use to serve others and grow as a person.
+        </p>
+        <div class="slider">
+            <img src="fetec1.jpg" alt="">
+            <img src="fetec2.jpg" alt="">
+        </div>
+    </section>
+
+    
+</body>
+</html>
